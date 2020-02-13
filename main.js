@@ -77,7 +77,7 @@ function bookReduce(arr) {
     });
 
     return bookListShort;
-    // или более лаконично: return [...new Set(bookList)];
+    // или более лаконично: return [...new Set(bookList)]; но этого не проходили, увидено на stackoverflow
     // также можно было проверять наличие копии книги в bookListShort на этапе arr.reduce, но получалось как-то заумно, решил разбить
 }
 
