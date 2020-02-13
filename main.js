@@ -63,8 +63,9 @@ const people = [{
 
 function bookReduce(arr) {
     let bookList = arr.reduce(function(list, person) {
-        list.push(person.books[0]);
-        list.push(person.books[1]);
+        person.books.forEach(function(book) {
+            list.push(book);
+        });
         return list;
     }, []);
 
